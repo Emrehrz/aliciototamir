@@ -5,16 +5,16 @@ import { motion } from "framer-motion";
 
 export default function InfoCard() {
   return (
-    <div className="w-full  p-4 bg-green rounded-b-lg shadow ">
+    <div className="w-full md:w-fit mx-auto flex flex-col md:flex-row p-4 bg-green rounded-b-lg shadow ">
       <Image
         src={card2}
         width={300}
         height={300}
-        className="mx-auto rounded-md"
+        className="mx-auto md:mx-0 rounded-md"
         alt="oto tamir ve bakim servisi"
       />
 
-      <div className="p-4">
+      <div className=" p-4">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           <div className="text-slate-900">Sorunsuz tamir</div>
         </h5>
