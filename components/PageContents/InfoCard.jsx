@@ -19,7 +19,7 @@ export default function InfoCard() {
           <div className="text-slate-900">Sorunsuz tamir</div>
         </h5>
         <p className="mb-3 bg-lightBlue/20 py-2 px-3 text-center leading-relaxed font-semibold rounded-md text-darkBlue ">
-          Arıza ve sorun çıkaran araçlarınız için emin elden gelen çözümler.
+          Arıza ve hasarlı araçlarınız için emin elden gelen çözümler.
         </p>
       </div>
     </div>

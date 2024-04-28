@@ -1,6 +1,5 @@
 import { inter } from "./ui/fonts";
 import Navbar from "../components/Navbar/Navbar";
-import ContactBanner from "../components/ContactBanner/ContactBanner";
 import "../app/ui/global.css";
 export default function RootLayout({ children }) {
   return (

@@ -34,7 +34,7 @@ export default function LocationInfo() {
       </p>
       <hr className="w-48 h-1 mx-auto my-2 border-0 rounded md:my-10 bg-gray-700"></hr>
       <h2 className="text-xl">Çalışma Saatleri:</h2>
-      <p className="font-semibold">Pazartesi - Cuma: 8:00 - 19:00</p>
+      <p className="font-semibold">Pazartesi - Cumartesi: 8:00 - 19:00</p>
     </div>
   );
 }

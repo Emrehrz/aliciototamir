@@ -1,9 +1,9 @@
+import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 export default function Navbar() {
   return (
-    <nav className=" bg-lightBlue p-4 text-white">
-      <div className="container mx-auto text-2xl  text-center font-bold ">
-        <p>Alici Kardesler Ototamir</p>
-      </div>
+    <nav className=" flex gap-2 text-2xl font-bold justify-center items-center bg-lightBlue p-4 text-white">
+      <HiOutlineWrenchScrewdriver />
+      <p>Alıcı Ototamir</p>
     </nav>
   );
 }
