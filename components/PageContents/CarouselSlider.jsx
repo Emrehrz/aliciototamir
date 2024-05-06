@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-export default function CarouselDeneme({ slides }) {
+import { delay, motion, useTime, useTransform } from "framer-motion";
+export default function CarouselSlider({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function CarouselDeneme({ slides }) {
       setCurrentSlide((prevSlide) =>
         prevSlide === slides.length - 1 ? 0 : prevSlide + 1
       );
-    }, 5000); // Her 5 saniyede bir slaydı değiştir
+    }, 3000); // Her 3 saniyede bir slaydı değiştir
     return () => clearInterval(interval);
   }, [currentSlide]);
 
@@ -26,7 +27,7 @@ export default function CarouselDeneme({ slides }) {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative block md:hidden ">
       <div className="h-[400px] w-[300px]">
         {slides.map((slide, index) => (
           <div
@@ -38,15 +39,17 @@ export default function CarouselDeneme({ slides }) {
             }`}
           >
             <Image
-              className="mx-auto w-full h-full md:w-[400px] md:h-[400px] "
+              className="mx-auto w-full h-full md:w-[600px] md:h-[600px] "
               src={slide.image}
-              alt={slide.title}
+              alt={slide.alt}
               width={400}
               height={400}
             />
-            <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4">
-              <h2 className="text-lg font-bold">{slide.title}</h2>
-              {/* <p className="text-sm">{slide.description}</p> */}
+            <div className="absolute flex flex-col gap-2 bottom-0 left-0 w-full bg-green bg-opacity-70 text-slate-900 p-2 md:text-center">
+              <h2 className="text-xl font-bold">{slide.title}</h2>
+              <p className="mx-auto text-base bg-white opacity-50 w-fit p-1 px-2 rounded-md">
+                {slide.description}
+              </p>
             </div>
           </div>
         ))}

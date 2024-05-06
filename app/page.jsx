@@ -2,31 +2,36 @@ import HeroSection from "../components/PageContents/HeroSection";
 import LocationInfo from "../components/PageContents/LocationInfo";
 import CTAbutton from "../components/PageContents/CTAbutton";
 import Footer from "../components/PageContents/Footer";
-import CarouselDeneme from "../components/PageContents/CarouselDeneme";
+import CarouselSlider from "../components/PageContents/CarouselSlider";
+
 const slides = [
   {
-    title: "Güvenilir Hizmet",
-    description: "Bu birinci slayt",
-    image: "/card-1.webp", // Yolu belirtin
+    title: "Motor Tamir",
+    description:
+      "Güvenilir, eksiksiz ve hızlı hizmet anlayışımızla hem her marka ve model aracınızı hem de sizin memnuniyetinizi önemsiyoruz.",
+    image: "/card-1.webp",
+    alt: "Alman araba tamir ve bakım.",
   },
   {
-    title: "Uygun Fiyat",
-    description: "Bu ikinci slayt",
-    image: "/card-2.webp", // Yolu belirtin
+    title: "Periyodik Bakım",
+    description:
+      "Aracınızın uzun ömürlü olması ve ideal sürüş için gerekli bakımları itina ile yapmaktayız.",
+    image: "/card-2.webp",
+    alt: "Alıcı Oto Tamir ve Bakım Servisinden bir kare.",
   },
   {
-    title: "Eksiksiz Tamir ve Bakım",
-    description: "Bu üçüncü slayt",
-    image: "/card-3.webp", // Yolu belirtin
+    title: "Arıza Tespit ve Onarım",
+    description:
+      "Çeşitli nedenlerle arıza veren arabanız için mümkün olan en uygun onarım işlemi gerçekleştiriyoruz.",
+    image: "/card-3.webp",
+    alt: "Amerikan arabalarına işlem uygulamaktayız.",
   },
 ];
 export default function Page() {
   return (
     <div className="h-screen max-w-screen flex flex-col ">
       <HeroSection />
-
-      <CarouselDeneme slides={slides} />
-
+      <CarouselSlider slides={slides} />
       <LocationInfo />
       <CTAbutton />
       <Footer />

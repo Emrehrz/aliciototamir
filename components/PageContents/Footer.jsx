@@ -7,7 +7,10 @@ export default function Footer() {
         </span>
         <ul className="flex md:flex-col  items-center  font-medium text-white sm:mt-0">
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">
+            <a
+              href="#"
+              className="hover:underline me-4 md:me-6 text-darkBlue font-semibold"
+            >
               Uğur Usta: 0 541 408 20 16
             </a>
           </li>
