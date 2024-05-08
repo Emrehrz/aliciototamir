@@ -21,11 +21,11 @@ export default function TypeWriter() {
   }, []);
 
   return (
-    <span className="w-fit mx-auto">
+    <h2 className="w-fit mx-auto">
       <motion.span className=" p-2 rounded-md bg-white/80 text-darkBlue font-bold  text-lg md:text-xl lg:text-2xl text-center ">
         {displayText}
       </motion.span>
       <CursorBlinker />
-    </span>
+    </h2>
   );
 }

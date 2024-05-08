@@ -10,7 +10,7 @@ export default function CarouselSlider({ slides }) {
       setCurrentSlide((prevSlide) =>
         prevSlide === slides.length - 1 ? 0 : prevSlide + 1
       );
-    }, 3000); // Her 3 saniyede bir slaydı değiştir
+    }, 5000); // Her 3 saniyede bir slaydı değiştir
     return () => clearInterval(interval);
   }, [currentSlide]);
 
@@ -46,7 +46,7 @@ export default function CarouselSlider({ slides }) {
               height={400}
             />
             <div className="absolute flex flex-col gap-2 bottom-0 left-0 w-full bg-green bg-opacity-70 text-slate-900 p-2 md:text-center">
-              <h2 className="text-xl font-bold">{slide.title}</h2>
+              <h3 className="text-xl font-bold">{slide.title}</h3>
               <p className="mx-auto text-base bg-white opacity-50 w-fit p-1 px-2 rounded-md">
                 {slide.description}
               </p>

@@ -17,13 +17,13 @@ export default function LocationInfo() {
         ></iframe>
       </div>
 
-      <h2 className="text-xl text-darkBlue">Dükkan Adresi:</h2>
+      <h4 className="text-xl text-darkBlue">Dükkan Adresi:</h4>
       <p className="font-semibold">
         {" "}
         Mavikent, Karataş Sanayi Sitesi, 135022 Nolu Cd No:116/A
       </p>
       <hr className="w-48 h-1 mx-auto my-2 border-0 rounded md:my-10 bg-gray-700"></hr>
-      <h2 className="text-xl">Çalışma Saatleri:</h2>
+      <h4 className="text-xl">Çalışma Saatleri:</h4>
       <p className="font-semibold">Pazartesi - Cumartesi: 8:00 - 19:00</p>
     </div>
   );
