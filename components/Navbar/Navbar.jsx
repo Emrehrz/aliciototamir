@@ -6,9 +6,9 @@ export default function Navbar() {
     <nav className=" flex gap-2 text-2xl font-bold justify-center items-center bg-lightBlue text-white">
       <Image
         src={logo}
-        className="w-28 mx-auto"
-        width={300}
-        height={300}
+        className="mx-auto"
+        width={100}
+        height={100}
         alt="Alıcı Oto Tamir ve Bakım Servisi logo"
       />
     </nav>

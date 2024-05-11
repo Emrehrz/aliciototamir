@@ -17,14 +17,23 @@ export default function LocationInfo() {
         ></iframe>
       </div>
 
-      <h4 className="text-xl text-darkBlue">Dükkan Adresi:</h4>
-      <p className="font-semibold">
-        {" "}
-        Mavikent, Karataş Sanayi Sitesi, 135022 Nolu Cd No:116/A
-      </p>
+      <span className=" text-center w-full text-darkBlue font-semibold italic sm:text-center mr-auto ">
+        Bakımlarınızı geciktirmeyin.
+      </span>
       <hr className="w-48 h-1 mx-auto my-2 border-0 rounded md:my-10 bg-gray-700"></hr>
-      <h4 className="text-xl">Çalışma Saatleri:</h4>
-      <p className="font-semibold">Pazartesi - Cumartesi: 8:00 - 19:00</p>
+
+      <div className="bg-white p-2 rounded-md">
+        <h4 className="text-xl mb-2 text-darkBlue">Dükkan Adresi:</h4>
+        <p className="font-semibold">
+          Mavikent, Karataş Sanayi Sitesi, 135022 Nolu Cd No:116/A
+        </p>
+      </div>
+
+      <hr className="w-48 h-1 mx-auto my-2 border-0 rounded md:my-10 bg-gray-700"></hr>
+      <div className="bg-white p-2 rounded-md">
+        <h4 className="text-xl">Çalışma Saatleri:</h4>
+        <p className="font-semibold">Pazartesi - Cumartesi: 8:00 - 19:00</p>
+      </div>
     </div>
   );
 }

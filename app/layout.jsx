@@ -3,15 +3,13 @@ import Navbar from "../components/Navbar/Navbar";
 import "../app/ui/global.css";
 
 export const metadata = {
-  title: "Alıcı Oto Tamir ve Bakım",
+  title: "Alıcı Oto - Gaziantep Oto Tamir ve Bakım Hizmetleri",
   description:
     "Gaziantep oto tamir ve bakim servisi. Uygun ve pratik işçilik, ustasından güvence. ",
   generator: "Next.js",
-  referrer: "origin-when-cross-origin",
-  keywords: ["Oto", "Tamir", "Bakım"],
+  keywords: ["Oto", "Araba", "Tamir", "Bakım", "Gaziantep"],
   // authors: [{ name: "Emre" }, { name: "Emre", url: "https://nextjs.org" }],
   creator: "Emre HORUZ",
-  publisher: "Emre HORUZ",
 };
 
 export default function RootLayout({ children }) {

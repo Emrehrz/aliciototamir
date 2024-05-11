@@ -10,7 +10,7 @@ export default function CarouselSlider({ slides }) {
       setCurrentSlide((prevSlide) =>
         prevSlide === slides.length - 1 ? 0 : prevSlide + 1
       );
-    }, 5000); // Her 3 saniyede bir slaydı değiştir
+    }, 5000);
     return () => clearInterval(interval);
   }, [currentSlide]);
 
@@ -39,7 +39,7 @@ export default function CarouselSlider({ slides }) {
             }`}
           >
             <Image
-              className="mx-auto w-full h-full md:w-[600px] md:h-[600px] "
+              className="mx-auto w-full h-full"
               src={slide.image}
               alt={slide.alt}
               width={400}
