@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import PhonePopover from './PhonePopover';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,11 +30,11 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled
-          ? 'bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 py-0 shadow-lg'
-          : 'bg-transparent border-transparent py-2'
+        ? 'bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 py-0 shadow-lg'
+        : 'bg-transparent border-transparent py-2'
         }`}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between md:justify-around px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2 group">
@@ -65,21 +66,8 @@ export default function Header() {
         </nav>
 
         {/* Desktop CTA Buttons */}
-        <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="tel:+905555555555"
-            className="flex items-center gap-2 rounded-lg bg-zinc-800 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 focus:ring-2 focus:ring-zinc-500 focus:outline-none"
-          >
-            <Phone className="h-4 w-4" />
-            <span>Telefonla Ara</span>
-          </a>
-          <a
-            href="#iletisim"
-            className="flex items-center gap-2 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-green-700 shadow-lg shadow-green-900/20 focus:ring-2 focus:ring-green-500 focus:outline-none"
-          >
-            <Calendar className="h-4 w-4" />
-            <span>Randevu Al</span>
-          </a>
+        <div className="hidden lg:flex items-center">
+          <PhonePopover />
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -107,13 +95,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
-              <a
-                href="tel:+905555555555"
-                className="flex items-center justify-center gap-2 rounded-lg bg-zinc-800 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
-              >
-                <Phone className="h-4 w-4" />
-                <span>Telefonla Ara</span>
-              </a>
+              <PhonePopover />
               <a
                 href="#iletisim"
                 className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-green-700"

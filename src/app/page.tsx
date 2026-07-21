@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-center w-full relative">
+      <main className="flex min-h-screen flex-col items-center justify-center w-full relative z-10">
         <Hero />
         <Marquee />
         <Services />

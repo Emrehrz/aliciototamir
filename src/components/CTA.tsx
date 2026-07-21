@@ -1,8 +1,8 @@
-import { PhoneCall } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 export default function CTA() {
   return (
-    <section className="w-full bg-red-600 py-20 relative overflow-hidden">
+    <section className="w-full bg-red-600 py-20 relative overflow-hidden z-10">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] pointer-events-none mix-blend-overlay" />
 
@@ -11,22 +11,45 @@ export default function CTA() {
           Aracınızı Tamir Ettirmeye Hazır Mısınız?
         </h2>
         <p className="text-red-100 text-lg sm:text-xl font-medium mb-10 max-w-2xl mx-auto drop-shadow-md">
-          Usta ellerde güvenli sürüş için hemen randevunuzu alın formumuzu doldurun ya da bizi arayın. Royal Motors olarak daima yanınızdayız.
+          Usta ellerde güvenli sürüş için hemen bizi arayın veya randevunuzu alın. Royal Motors olarak daima yanınızdayız.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* Telefon Kartları Konteyneri */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+          {/* Enver Usta */}
           <a
-            href="tel:+905555555555"
-            className="flex items-center gap-2 px-8 py-4 bg-zinc-950 hover:bg-zinc-900 text-white font-bold text-lg rounded-xl shadow-2xl transition-all hover:-translate-y-1 focus:ring-4 focus:ring-zinc-800"
+            href="tel:+905345681485"
+            className="group flex w-full sm:w-1/2 items-center justify-start sm:justify-center gap-4 rounded-2xl bg-black/25 hover:bg-black/40 border border-white/10 p-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl backdrop-blur-md"
           >
-            <PhoneCall className="h-5 w-5 text-red-500" />
-            Hemen Ara
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-500/20 text-green-400 group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
+              <Phone className="h-5 w-5" />
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xs font-semibold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
+                Enver Usta
+              </span>
+              <span className="text-base sm:text-lg font-bold text-white tracking-wide">
+                +90 534 568 14 85
+              </span>
+            </div>
           </a>
+
+          {/* Uğur Usta */}
           <a
-            href="#iletisim"
-            className="flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:text-red-600 text-white font-bold text-lg rounded-xl shadow-lg transition-all hover:-translate-y-1"
+            href="tel:+905414082078"
+            className="group flex w-full sm:w-1/2 items-center justify-start sm:justify-center gap-4 rounded-2xl bg-black/25 hover:bg-black/40 border border-white/10 p-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl backdrop-blur-md"
           >
-            Randevu Al
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-500/20 text-green-400 group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
+              <Phone className="h-5 w-5" />
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xs font-semibold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
+                Uğur Usta
+              </span>
+              <span className="text-base sm:text-lg font-bold text-white tracking-wide">
+                +90 541 408 20 78
+              </span>
+            </div>
           </a>
         </div>
       </div>

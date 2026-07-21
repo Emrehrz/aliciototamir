@@ -38,16 +38,22 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="h-5 w-5 text-red-600 shrink-0" />
-                <a href="tel:+905555555555" className="text-zinc-300 text-sm hover:text-white transition-colors">
-                  +90 555 555 55 55
+                <a href="tel:+905345681485" className="text-zinc-300 text-sm hover:text-white transition-colors">
+                  Enver Usta: +90 534 568 14 85
                 </a>
               </li>
               <li className="flex items-center gap-4">
+                <Phone className="h-5 w-5 text-red-600 shrink-0" />
+                <a href="tel:+905414082078" className="text-zinc-300 text-sm hover:text-white transition-colors">
+                  Uğur Usta: +90 541 408 20 78
+                </a>
+              </li>
+              {/* <li className="flex items-center gap-4">
                 <Mail className="h-5 w-5 text-red-600 shrink-0" />
                 <a href="mailto:info@royalmotorsgaziantep.com" className="text-zinc-300 text-sm hover:text-white transition-colors">
                   info@royalmotors.com
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -87,7 +93,7 @@ export default function Footer() {
             <div className="w-full grow bg-zinc-800 rounded-xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500 min-h-[200px]">
               <iframe
                 title="Şahinbey Mavikent Sanayi Haritası"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101254.51268955217!2d37.3809627!3d37.0658421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e50523f2b4c1%3A0x8e8eb4efc42c7aa!2sGaziantep%2C%20%C5%9Eahinbey%2FGaziantep!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.6039073967277!2d37.3849647!3d36.9953868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531dd4c6aa10f37%3A0xdaef831cd045f70a!2sRoyal%20Motors%20Tamir%20Bak%C4%B1m%20Servisi!5e0!3m2!1str!2str!4v1784625256938!5m2!1str!2str"
                 width="100%"
                 height="100%"
                 style={{ border: 0, position: 'absolute', top: 0, left: 0 }}

@@ -61,7 +61,7 @@ export default function RootLayout({
     image: 'https://royalmotorsgaziantep.com/garage-bg.jpg',
     '@id': '',
     url: 'https://royalmotorsgaziantep.com',
-    telephone: '+905555555555',
+    telephone: '+905414082078',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Mavikent Sanayi Sitesi',
