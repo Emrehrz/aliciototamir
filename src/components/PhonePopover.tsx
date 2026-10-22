@@ -45,17 +45,6 @@ export default function PhonePopover() {
               <span className="font-semibold text-white tracking-wide">+90 534 568 14 85</span>
             </div>
           </a>
-
-          <a
-            href="tel:+905414082078"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-200 transition-colors hover:bg-zinc-700/70 hover:text-white whitespace-nowrap"
-          >
-            <Phone className="h-4 w-4 shrink-0 text-green-400" />
-            <div className="flex flex-col text-left">
-              <span className="text-[11px] text-zinc-400 leading-none mb-1">UĞUR USTA</span>
-              <span className="font-semibold text-white tracking-wide">+90 541 408 20 78</span>
-            </div>
-          </a>
         </div>
       )}
     </div>

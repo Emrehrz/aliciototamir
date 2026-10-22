@@ -5,7 +5,7 @@ export default function Testimonials() {
     {
       name: 'Ahmet Yılmaz',
       role: 'Volkswagen Passat Sahibi',
-      content: 'Aracımın klima arızası için pek çok yere gittim ama sorunu sadece Royal Motors çözebildi. Uğur Usta ve ekibi gerçekten işinin ehli. Güler yüzlü ve dürüst hizmet.',
+      content: 'Aracımın klima arızası için pek çok yere gittim ama sorunu sadece Royal Motors çözebildi. Enver Usta ve ekibi gerçekten işinin ehli. Güler yüzlü ve dürüst hizmet.',
     },
     {
       name: 'Mehmet Kaplan',
@@ -25,7 +25,7 @@ export default function Testimonials() {
         <div className="flex flex-col items-center justify-center text-center mb-16">
           <span className="text-red-600 font-bold tracking-wider text-sm mb-3 uppercase">Müşteri Yorumları</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-2xl mb-4">
-            ENVER VE UĞUR USTA EKİBİNE <span className="text-red-600">TEŞEKKÜRLER</span>
+            ENVER USTA VE EKİBİNE <span className="text-red-600">TEŞEKKÜRLER</span>
           </h2>
           <p className="text-zinc-400 max-w-xl text-lg">
             Gaziantep Şahinbey'de bizi tercih eden ve memnuniyetini paylaşan yüzlerce müşterimizden birkaçı.

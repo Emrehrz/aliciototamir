@@ -14,12 +14,12 @@ export default function CTA() {
           Usta ellerde güvenli sürüş için hemen bizi arayın veya randevunuzu alın. Royal Motors olarak daima yanınızdayız.
         </p>
 
-        {/* Telefon Kartları Konteyneri */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+        {/* Telefon Kartı Konteyneri */}
+        <div className="flex justify-center max-w-md mx-auto">
           {/* Enver Usta */}
           <a
             href="tel:+905345681485"
-            className="group flex w-full sm:w-1/2 items-center justify-start sm:justify-center gap-4 rounded-2xl bg-black/25 hover:bg-black/40 border border-white/10 p-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl backdrop-blur-md"
+            className="group flex w-full items-center justify-center gap-4 rounded-2xl bg-black/25 hover:bg-black/40 border border-white/10 p-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl backdrop-blur-md"
           >
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-500/20 text-green-400 group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
               <Phone className="h-5 w-5" />
@@ -30,24 +30,6 @@ export default function CTA() {
               </span>
               <span className="text-base sm:text-lg font-bold text-white tracking-wide">
                 +90 534 568 14 85
-              </span>
-            </div>
-          </a>
-
-          {/* Uğur Usta */}
-          <a
-            href="tel:+905414082078"
-            className="group flex w-full sm:w-1/2 items-center justify-start sm:justify-center gap-4 rounded-2xl bg-black/25 hover:bg-black/40 border border-white/10 p-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl backdrop-blur-md"
-          >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-500/20 text-green-400 group-hover:bg-green-500 group-hover:text-white transition-colors duration-300">
-              <Phone className="h-5 w-5" />
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="text-xs font-semibold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
-                Uğur Usta
-              </span>
-              <span className="text-base sm:text-lg font-bold text-white tracking-wide">
-                +90 541 408 20 78
               </span>
             </div>
           </a>

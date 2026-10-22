@@ -42,12 +42,6 @@ export default function Footer() {
                   Enver Usta: +90 534 568 14 85
                 </a>
               </li>
-              <li className="flex items-center gap-4">
-                <Phone className="h-5 w-5 text-red-600 shrink-0" />
-                <a href="tel:+905414082078" className="text-zinc-300 text-sm hover:text-white transition-colors">
-                  Uğur Usta: +90 541 408 20 78
-                </a>
-              </li>
               {/* <li className="flex items-center gap-4">
                 <Mail className="h-5 w-5 text-red-600 shrink-0" />
                 <a href="mailto:info@royalmotorsgaziantep.com" className="text-zinc-300 text-sm hover:text-white transition-colors">
